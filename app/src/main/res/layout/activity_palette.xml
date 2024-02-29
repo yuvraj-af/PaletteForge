@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="stateHidden"
+    tools:context=".PaletteActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_colors_here"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="25dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="25dp"
+            app:cardElevation="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#F6F6F6" >
+
+            <LinearLayout
+                android:id="@+id/tempColorLayout"
+                android:layout_width="match_parent"
+                android:paddingStart="12dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="RtlSymmetry">
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/labelEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:textStyle="bold"
+            android:hint="@string/label"
+            android:background="@drawable/edittext_border"
+            android:textColor="@color/black"
+            android:elevation="8dp"
+            android:inputType="textCapSentences"
+            android:textColorHint="#666666" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="65dp">
+
+            <Button
+                android:id="@+id/clearListButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="@string/clear"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                style="@style/RoundedButton"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="25dp"/>
+
+            <Button
+                android:id="@+id/addPaletteButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="25dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:text="@string/add_palette"
+                style="@style/RoundedPaletteButton"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_palettes"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="25dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/palettesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        app:backgroundTint="#FEC013"
+        app:srcCompat="@drawable/add"
+        android:contentDescription="@string/todo" />
+
+</RelativeLayout>

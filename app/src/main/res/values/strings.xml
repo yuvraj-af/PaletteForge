@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PaletteForge</string>
+    <string name="palette">Palette</string>
+    <string name="todo">TODO</string>
+    <string name="your_colors_here">Your colors here</string>
+    <string name="your_palettes">Your Palettes</string>
+    <string name="clear_list">Clear List</string>
+    <string name="clear">Clear</string>
+    <string name="label">Label</string>
+    <string name="add_palette">Add Palette</string>
+</resources>

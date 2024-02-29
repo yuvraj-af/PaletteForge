@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- Outer circle with startColor="#FFFFFF" and endColor="#CECECE" -->
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:startColor="#FFFFFF"
+                android:endColor="#F5F5F5"
+                android:gradientRadius="100%" />
+        </shape>
+    </item>
+</layer-list>
