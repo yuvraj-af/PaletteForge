@@ -17,4 +17,4 @@ The app uses SharedPreferences to save the Palette Data.
 
 **This application was made by a _Rookie_ programmer so it is bound to have numerous flaws. No clean architecture techniques were adopted.**
 
-**To anyone who wants to use the project, I've made this is Android Studio Electric Eel Patch 2.**
+**To anyone who wants to use the project, I've made this in Android Studio Electric Eel Patch 2.**
